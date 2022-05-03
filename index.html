@@ -1,25 +1,550 @@
 <!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="webthemez">
-    <title>深圳吾控健康科技有限公司</title>
-	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet"> 
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet"> 
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
-</head> 
+<!--<![endif]-->
 
-<body id="home">
-接口主入口升级中,请期待......
+<head>
+	<meta charset="utf-8">
+	<title>蓝牙/超宽带物联网终端/网关-开放接口API/SDK</title>
+	<meta name="keywords" content="超宽带,蓝牙,体征监护,运动训练人工智能,开放接口">
+	<meta name="description" content="专注于穿戴领域的导航定位技术并结合生命体征分析。UWB静态定位标准差10cm。动态心率检测标准差3bpm。		
+		低功耗BLE/UWB终端、便携式BLE/UWB基站。智慧医疗、智慧校园、心率检测、体温检测与血压检测、羽毛球/足球等比赛训练检测">
+	<meta name="author" content="深圳吾控健康科技有限公司">
+
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- Web Fonts -->
+	<link
+		href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext'
+		rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Font Awesome CSS -->
+	<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+	<!-- Plugins -->
+	<link href="css/animations.css" rel="stylesheet">
+
+	<!-- Worthy core CSS file -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Custom css -->
+	<link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body class="no-trans">
+	<!-- scrollToTop -->
+	<!-- ================ -->
+	<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+	<!-- header start -->
+	<!-- ================ -->
+	<header class="header fixed clearfix navbar navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+
+					<!-- header-left start -->
+					<!-- ================ -->
+					<div class="header-left clearfix">
+
+						<!-- logo -->
+						<div class="logo smooth-scroll">
+							<a href="#banner"><img id="logo" src="images/imyfit1.png" alt="Worthy"></a>
+						</div>
+
+						<!-- name-and-slogan -->
+						<div class="site-name-and-slogan smooth-scroll">
+							<div class="site-name"><a href="https://www.imyfit.com">开放平台</a></div>
+							<div class="site-slogan">人员健康与位置信息服务提供商</div>
+						</div>
+
+					</div>
+					<!-- header-left end -->
+
+				</div>
+				<div class="col-md-8">
+
+					<!-- header-right start -->
+					<!-- ================ -->
+					<div class="header-right clearfix">
+
+						<!-- main-navigation start -->
+						<!-- ================ -->
+						<div class="main-navigation animated">
+
+							<!-- navbar start -->
+							<!-- ================ -->
+							<nav class="navbar navbar-default" role="navigation">
+								<div class="container-fluid">
+
+									<!-- Toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse"
+											data-target="#navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse scrollspy smooth-scroll"
+										id="navbar-collapse-1">
+										<ul class="nav navbar-nav navbar-right">
+											<li class="active"><a href="#banner">首页</a></li>
+											<li><a href="#">视频演示</a></li>
+											<!-- <li><a href="#">产品简介</a></li> -->
+											<li><a href="#api">开放接口</a></li>
+											<li><a href="#contact">联系我们</a></li>
+										</ul>
+									</div>
+
+								</div>
+							</nav>
+							<!-- navbar end -->
+
+						</div>
+						<!-- main-navigation end -->
+
+					</div>
+					<!-- header-right end -->
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+
+
+
+	<!-- section start -->
+	<!-- ================ -->
+	<div class="section translucent-bg bg-image-2 pb-clear">
+		<div class="container object-non-visible" data-animation-effect="fadeIn">
+			<br><br><br><br><br><br><br>
+			<h1 id="technologies" class="title text-center">开放接口</h1>
+			<div class="space"></div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="media testimonial">
+						<div class="media-left">
+							 <img src="images/testimonial-1.png" alt="">
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">终端局域可连接接口</h3>
+							<blockquote>
+								<p>终端的可连接蓝牙接口API，一个文档多平台使用；接口API符合蓝牙联盟标准规范，真正实现跨平台。
+								</p>
+								<footer>
+									<cite title="Source Title">
+										<a href="http://imyfit.gitee.io/device-ble-conn-api" data-toggle="modal">点击获取接口</a>
+									</cite>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="tech-uwb" tabindex="-1" role="dialog" aria-labelledby="tech-uwb-label"
+						aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="tech-uwb-label">tech-uwb</h4>
+								</div>
+								<div class="modal-body">
+									<h3>Project Description</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<p><a href="pdfjs/web/viewer.html?file=../../pdf/ble.pdf">4567</a>Lorem
+												ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem
+												quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio
+												corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo
+												placeat dignissimos eius mollitia et quas officia doloremque ipsum
+												labore rem deserunt vero! Magnam totam delectus accusantium voluptas et,
+												tempora quos atque, fugiat, obcaecati voluptatibus commodi illo
+												voluptates dolore nemo quo soluta quis.</p>
+											<p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum
+												sapiente obcaecati molestias quasi optio exercitationem, voluptate quis
+												consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur
+												quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat
+												corporis quisquam dolorum at nesciunt.</p>
+										</div>
+										<div class="col-md-6">
+											<img src="images/portfolio-10.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+
+
+				</div>
+				<div class="col-md-4">
+					<div class="media testimonial">
+						<div class="media-left">
+							<img src="images/testimonial-2.png" alt="">
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">终端局域广播接口</h3>
+							<blockquote>
+								<p>终端的蓝牙广播接口API（含数据广播/AoA定位广播），支持标准蓝牙设备持续扫描获取终端数据。
+								</p>
+								<footer>
+									<cite title="Source Title">
+										<a href="http://imyfit.gitee.io/device-ble-boardcast-api" data-toggle="modal">点击获取接口</a>
+									</cite>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="tech-ble" tabindex="-1" role="dialog" aria-labelledby="tech-ble-label"
+						aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="tech-ble-label">tech-ble</h4>
+								</div>
+								<div class="modal-body">
+									<h3>Project Description</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<p><a href="pdfjs/web/viewer.html?file=../../pdf/ble.pdf">4567</a>Lorem
+												ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem
+												quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio
+												corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo
+												placeat dignissimos eius mollitia et quas officia doloremque ipsum
+												labore rem deserunt vero! Magnam totam delectus accusantium voluptas et,
+												tempora quos atque, fugiat, obcaecati voluptatibus commodi illo
+												voluptates dolore nemo quo soluta quis.</p>
+											<p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum
+												sapiente obcaecati molestias quasi optio exercitationem, voluptate quis
+												consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur
+												quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat
+												corporis quisquam dolorum at nesciunt.</p>
+										</div>
+										<div class="col-md-6">
+											<img src="images/portfolio-10.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+				<div class="col-md-4">
+					<div class="media testimonial">
+						<div class="media-left">
+							<img src="images/testimonial-3.png" alt="">
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">终端广域接口</h3>
+							<blockquote>
+								<p>终端的4G/5G接口API（含NB-IoT/Cat.1），支持私有云部署获取终端各类体征数据。</p>
+								<footer>
+									<cite title="Source Title">
+										<a href="http://imyfit.gitee.io/device-nbiot-conn-api" data-toggle="modal">点击获取接口</a>
+									</cite>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="tech-lora" tabindex="-1" role="dialog" aria-labelledby="tech-lora-label"
+						aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="tech-lora-label">tech-lora</h4>
+								</div>
+								<div class="modal-body">
+									<h3>Project Description</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<p><a href="pdfjs/web/viewer.html?file=../../pdf/ble.pdf">4567</a>Lorem
+												ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem
+												quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio
+												corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo
+												placeat dignissimos eius mollitia et quas officia doloremque ipsum
+												labore rem deserunt vero! Magnam totam delectus accusantium voluptas et,
+												tempora quos atque, fugiat, obcaecati voluptatibus commodi illo
+												voluptates dolore nemo quo soluta quis.</p>
+											<p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum
+												sapiente obcaecati molestias quasi optio exercitationem, voluptate quis
+												consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur
+												quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat
+												corporis quisquam dolorum at nesciunt.</p>
+										</div>
+										<div class="col-md-6">
+											<img src="images/portfolio-10.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="media testimonial">
+						<div class="media-left">
+							<img src="images/testimonial-2.png" alt="">
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">物联网网关接口</h3>
+							<blockquote>
+								<p>蓝牙/UWB物联网关，边缘计算网关接口API。提供Java版SDK，支持私有部署，快速接入应用。</p>
+								<footer>
+									<cite title="Source Title">
+										<a href="#" data-toggle="modal">点击获取接口（更新中）</a>
+									</cite>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="tech-nbiot" tabindex="-1" role="dialog"
+						aria-labelledby="tech-nbiot-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="tech-nbiot-label">tech-nbiot</h4>
+								</div>
+								<div class="modal-body">
+									<h3>Project Description</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<p><a href="pdfjs/web/viewer.html?file=../../pdf/ble.pdf">4567</a>Lorem
+												ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem
+												quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio
+												corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo
+												placeat dignissimos eius mollitia et quas officia doloremque ipsum
+												labore rem deserunt vero! Magnam totam delectus accusantium voluptas et,
+												tempora quos atque, fugiat, obcaecati voluptatibus commodi illo
+												voluptates dolore nemo quo soluta quis.</p>
+											<p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum
+												sapiente obcaecati molestias quasi optio exercitationem, voluptate quis
+												consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur
+												quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat
+												corporis quisquam dolorum at nesciunt.</p>
+										</div>
+										<div class="col-md-6">
+											<img src="images/portfolio-10.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+				<div class="col-md-4">
+					<div class="media testimonial">
+						<div class="media-left">
+							<img src="images/testimonial-3.png" alt="">
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">系统平台接口</h3>
+							<blockquote>
+								<p>含设备管理、定位引擎、地图引擎及部分通用场景功能等，可快速嵌入各类数字化平台。</p>
+								<footer>
+									<cite title="Source Title">
+										<a href="#" data-toggle="modal">点击获取接口（更新中）</a>
+									</cite>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="tech-cloud" tabindex="-1" role="dialog"
+						aria-labelledby="tech-cloud-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="tech-cloud-label">iot-cloud</h4>
+								</div>
+								<div class="modal-body">
+									<h3>Project Description</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<br><br>
+											<p>该云平台使用workerman + codeigniter + AdminLte框架写</p>
+											<p>目前主要用于NB-IoT终端通信，详细文档需要登陆后查看</p>
+											<p>将陆续兼容COAP TCP MQTT ～ </p>
+											<p>平台地址：<a href="http://iot.smartany.top">我要看看去</a></p>
+										</div>
+										<div class="col-md-6">
+											<img src="images/portfolio-10.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+				<div class="col-md-4">
+					<div class="media testimonial">
+						<div class="media-left">
+							<img src="images/testimonial-3.png" alt="">
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">原始数据接口</h3>
+							<blockquote>
+								<p>面向人工智能领域的基础元数据接口（ECG/PPG等），可快速集成、高效训练模型。</p>
+								<footer>
+									<cite title="Source Title">
+										<a href="#" data-toggle="modal">点击获取接口（更新中）</a>
+									</cite>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="tech-cloud" tabindex="-1" role="dialog"
+						aria-labelledby="tech-cloud-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="tech-cloud-label">iot-cloud</h4>
+								</div>
+								<div class="modal-body">
+									<h3>Project Description</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<br><br>
+											<p>该云平台使用workerman + codeigniter + AdminLte框架写</p>
+											<p>目前主要用于NB-IoT终端通信，详细文档需要登陆后查看</p>
+											<p>将陆续兼容COAP TCP MQTT ～ </p>
+											<p>平台地址：<a href="http://iot.smartany.top">我要看看去</a></p>
+										</div>
+										<div class="col-md-6">
+											<img src="images/portfolio-10.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<!-- section end -->
+
+
+	<!-- footer start -->
+	<!-- ================ -->
+	<footer id="footer">
+
+		<!-- .footer start -->
+		<!-- ================ -->
+		<div class="footer section">
+
+			<div class="container">
+				<h1 class="title text-center" id="contact">联系我们</h1>
+				<div class="space  text-center">
+					<ul class="list-icons"><a href="https://www.imyfit.com">再详细了解下</a>
+						<!-- <li><i class=""><img class="img-responsive center-block" src="images/taobao.png"
+									height="200" width="200" /></li> -->
+
+
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+		<!-- .footer end -->
+
+
+	</footer>
+	<!-- footer end -->
+
+	<!-- JavaScript files placed at the end of the document so the pages load faster
+		================================================== -->
+	<!-- Jquery and Bootstap core js files -->
+	<script type="text/javascript" src="plugins/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Modernizr javascript -->
+	<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+	<!-- Isotope javascript -->
+	<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+
+	<!-- Backstretch javascript -->
+	<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+
+	<!-- Appear javascript -->
+	<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+	<!-- Initialization of Plugins -->
+	<script type="text/javascript" src="js/template.js"></script>
+
+	<!-- Custom Scripts -->
+	<script type="text/javascript" src="js/custom.js"></script>
+
 </body>
+
 </html>
